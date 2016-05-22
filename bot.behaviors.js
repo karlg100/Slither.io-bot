@@ -459,7 +459,7 @@ var behaviors = (function() {
             obj.insidesnake = false;
 
             var aggressorCnt = collisionGrid.snakeAggressors.length;
-            var mindist = 22500;
+            var mindist = 90000;
 
             var curpos = window.getPos();
             var cell = collisionGrid.getCellByXY(curpos.x,curpos.y);
@@ -484,7 +484,7 @@ var behaviors = (function() {
                 if( aggressor.snk.sp > 7 )
                     mindist = 90000;
                 else
-                    mindist = 22500;
+                    mindist = 90000;
 
                 if( aggressor.snk.closest.distance2 < mindist ) {
                     obj.aggressor = aggressor;
