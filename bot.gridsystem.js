@@ -252,7 +252,7 @@ var collisionGrid = (function() {
             collisionGrid.addSnakes();
             collisionGrid.addFood();
 g
-            bot.radarResults = collisionHelper.radarScan(15,1000);
+            bot.radarResults = collisionHelper.radarScan(15,5000);
         },
 
 
