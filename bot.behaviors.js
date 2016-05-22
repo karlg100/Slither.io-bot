@@ -96,7 +96,8 @@ var behaviors = (function() {
                 //Can we sprint to the food?
                 behaviors.condition({
                     test: 'isSprintAllowed',
-                        pass: 'actionSprint',
+                        //pass: 'actionSprint',
+                        pass: 'actionWalk',
                         fail: 'actionWalk'
                 }),
 
