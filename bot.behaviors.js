@@ -96,8 +96,7 @@ var behaviors = (function() {
                 //Can we sprint to the food?
                 behaviors.condition({
                     test: 'isSprintAllowed',
-                        //pass: 'actionSprint',
-                        pass: 'actionWalk',
+                        pass: 'actionSprint',
                         fail: 'actionWalk'
                 }),
 
@@ -460,7 +459,7 @@ var behaviors = (function() {
             obj.insidesnake = false;
 
             var aggressorCnt = collisionGrid.snakeAggressors.length;
-            var mindist = 90000;
+            var mindist = 22500;
 
             var curpos = window.getPos();
             var cell = collisionGrid.getCellByXY(curpos.x,curpos.y);
@@ -485,7 +484,7 @@ var behaviors = (function() {
                 if( aggressor.snk.sp > 7 )
                     mindist = 90000;
                 else
-                    mindist = 90000;
+                    mindist = 22500;
 
                 if( aggressor.snk.closest.distance2 < mindist ) {
                     obj.aggressor = aggressor;
